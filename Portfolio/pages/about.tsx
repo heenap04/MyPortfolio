@@ -10,20 +10,20 @@ const AboutPage = () => {
         <div className={styles.aboutContent}>
           <section className={styles.section}>
             <p className={styles.paragraph}>
-              Hi, I’m Heena — a Full Stack Web Developer based in Chandigarh, India. I specialize in building responsive and scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+              Hi, I am Heena — a Full Stack Web Developer based in Chandigarh, India. I specialize in building responsive and scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
             </p>
             <p className={styles.paragraph}>
-              I focus on frontend development with React.js to create intuitive user interfaces, while also designing robust and secure backend systems using Express and Node.js. I’m passionate about clean code, great user experiences, and learning new technologies that push the web forward.
+              I focus on frontend development with React.js to create intuitive user interfaces, while also designing robust and secure backend systems using Express and Node.js. I am passionate about clean code, great user experiences, and learning new technologies that push the web forward.
             </p>
           </section>
 
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>What I've Built</h2>
             <p className={styles.paragraph}>
-              I’ve developed multiple full-stack projects, including a job portal with real-time listings, a facial recognition attendance system using deep learning, and a secure password manager with two-factor authentication.
+              I have developed multiple full-stack projects, including a job portal with real-time listings, a facial recognition attendance system using deep learning, and a secure password manager with two-factor authentication.
             </p>
             <p className={styles.paragraph}>
-              My work reflects a strong focus on usability, performance, and functionality — whether it’s authentication systems, responsive design, or backend API integration.
+              My work reflects a strong focus on usability, performance, and functionality — whether it is authentication systems, responsive design, or backend API integration.
             </p>
           </section>
 
