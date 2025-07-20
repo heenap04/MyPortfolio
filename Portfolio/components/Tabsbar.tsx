@@ -14,11 +14,11 @@ const Tabsbar = () => {
         filename="articles.json"
         path="/articles"
       /> */}
-      <Tab
+      {/* <Tab
         icon="/logos/markdown_icon.svg"
         filename="github.md"
         path="/github"
-      />
+      /> */}
     </div>
   );
 };
