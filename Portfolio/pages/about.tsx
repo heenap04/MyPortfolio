@@ -10,38 +10,27 @@ const AboutPage = () => {
         <div className={styles.aboutContent}>
           <section className={styles.section}>
             <p className={styles.paragraph}>
-              Hey! I&apos;m a Full Stack Developer from Chandigarh, India. I primarily
-              work with the MERN stack to build scalable and responsive web applications.
+              Hi, I’m Heena — a Full Stack Web Developer based in Chandigarh, India. I specialize in building responsive and scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
             </p>
             <p className={styles.paragraph}>
-              I&apos;m focused on frontend development with React.js, and also experienced in building robust backends using Node.js, Express.js, and MongoDB. I love developing user-friendly digital products and enjoy working in collaborative environments.
+              I focus on frontend development with React.js to create intuitive user interfaces, while also designing robust and secure backend systems using Express and Node.js. I’m passionate about clean code, great user experiences, and learning new technologies that push the web forward.
             </p>
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Experience</h2>
+            <h2 className={styles.sectionTitle}>What I've Built</h2>
             <p className={styles.paragraph}>
-              I&apos;m currently working as a <span className={styles.highlight}>freelancer</span>, where I&apos;ve built and delivered a variety of interactive full-stack projects for clients. My experience includes developing job portals, facial recognition systems, and secure authentication platforms — all focused on clean design and functionality.
+              I’ve developed multiple full-stack projects, including a job portal with real-time listings, a facial recognition attendance system using deep learning, and a secure password manager with two-factor authentication.
             </p>
             <p className={styles.paragraph}>
-              As a developer, I&apos;ve worked on multiple full-stack projects involving real-time functionality, authentication, and clean UI/UX design. I&apos;m always eager to learn, improve, and contribute to meaningful products.
+              My work reflects a strong focus on usability, performance, and functionality — whether it’s authentication systems, responsive design, or backend API integration.
             </p>
           </section>
-
-          {/* <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Writing</h2>
-            <p className={styles.paragraph}>
-              I’ve created multiple projects like a facial-recognition attendance system, a secure password manager with 2FA, and a job portal with real-time updates. You can check out my work on{' '}
-              <span className={styles.highlight}>
-                <a href="https://github.com/heenap04" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </span>.
-            </p>
-          </section> */}
 
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>Beyond Code</h2>
             <p className={styles.paragraph}>
-              Aside from programming, I enjoy reading novels, listening to relaxing music, and spending time learning new technologies. I value time management, attention to detail, and teamwork.
+              Outside development, I enjoy reading novels, exploring new tech, and listening to calming music. I value attention to detail, time management, and collaboration — all of which help me contribute effectively to any project or team.
             </p>
           </section>
         </div>
