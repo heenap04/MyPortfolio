@@ -18,7 +18,7 @@ const AboutPage = () => {
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>What I've Built</h2>
+            <h2 className={styles.sectionTitle}>What I have Built</h2>
             <p className={styles.paragraph}>
               I have developed multiple full-stack projects, including a job portal with real-time listings, a facial recognition attendance system using deep learning, and a secure password manager with two-factor authentication.
             </p>

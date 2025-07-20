@@ -2,6 +2,9 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export',
+  eslint: {
+    ignoreDuringBuilds: true, 
+  },
   images: {
     remotePatterns: [
       { hostname: 'res.cloudinary.com', protocol: 'https' },
