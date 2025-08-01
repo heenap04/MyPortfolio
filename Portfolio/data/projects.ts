@@ -4,56 +4,99 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
+  category: 'web' | 'data' | 'ai' | 'security' | 'mobile';
+  technologies: string[];
 }
 
 export const projects: Project[] = [
   {
     title: 'Jobseee',
     description:
-      'A full-featured job portal that allows employers to post listings and candidates to search, filter, and apply for jobs in real-time. Includes secure authentication, dynamic dashboards, and CRUD operations.',
-    logo: '/logos/vsc.svg',
+      'A comprehensive job portal platform connecting employers and job seekers. Features include real-time job listings, advanced search filters, secure authentication, dynamic dashboards, and seamless application tracking.',
+    logo: '/logos/jobseee.jpg',
     link: 'https://github.com/heenap04/Jobseee_jobportal_final',
     slug: 'Jobseee',
-  },
-  {
-    title: 'Forever',
-    description:
-      'An e-commerce web application with a clean interface, product browsing, cart functionality, and order flow. Designed for seamless user experience and responsive layouts.',
-    logo: '/logos/vsc.svg',
-    link: 'https://github.com/heenap04/E-commerce',
-    slug: 'Forever',
+    category: 'web',
+    technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'Express'],
   },
   {
     title: 'LockIt',
     description:
-      'A secure password manager featuring two-factor authentication, encrypted storage, and OTP verification. Built with React, Node.js, MongoDB, and JWT for end-to-end security.',
+      'A secure password manager with two-factor authentication, encrypted storage, and OTP verification. Built with modern security practices and end-to-end encryption for maximum protection.',
     logo: '/logos/vsc.svg',
-    link: 'https://github.com/heenap04/Password_Manager_2FA',
+    link: 'https://github.com/heenap04/LockIT',
     slug: 'LockIt',
+    category: 'security',
+    technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'JWT', '2FA'],
   },
   {
     title: 'Attendify',
     description:
-      'A camera-based facial recognition attendance system that automates marking attendance using real-time video and deep learning. Built with OpenCV, TensorFlow, and Firebase integration.',
+      'An intelligent camera-based facial recognition attendance system that automates attendance marking using real-time video processing and deep learning algorithms.',
     logo: '/logos/vsc.svg',
     link: 'https://github.com/heenap04/Attendify',
     slug: 'Attendify',
+    category: 'ai',
+    technologies: ['Python', 'OpenCV', 'TensorFlow', 'Firebase', 'Deep Learning'],
   },
-  
   {
-    title: 'Uinsights',
+    title: 'CLV Prediction',
     description:
-      'A web analytics dashboard project offering insights into user activity, session data, and traffic patterns. Built with clean UI components and modern data visualization tools.',
+      'Customer Lifetime Value prediction model using machine learning techniques. Analyzes customer behavior patterns to predict future value and optimize marketing strategies.',
     logo: '/logos/vsc.svg',
+    link: 'https://github.com/heenap04/CLV-prediction',
+    slug: 'CLV-prediction',
+    category: 'data',
+    technologies: ['Python', 'Jupyter', 'Machine Learning', 'Pandas', 'Scikit-learn'],
+  },
+  {
+    title: 'Uber Rides Analysis',
+    description:
+      'Comprehensive data analysis of Uber rides data including trip patterns, revenue analysis, and driver performance metrics using advanced analytics and visualization.',
+    logo: '/logos/vsc.svg',
+    link: 'https://github.com/heenap04/UberRides_DataAnalysis',
+    slug: 'UberRides_DataAnalysis',
+    category: 'data',
+    technologies: ['Python', 'Jupyter', 'Pandas', 'Matplotlib', 'Seaborn'],
+  },
+  {
+    title: 'Marketing A/B Testing',
+    description:
+      'Statistical analysis of marketing campaigns using A/B testing methodologies. Evaluates campaign effectiveness and provides data-driven insights for optimization.',
+    logo: '/logos/vsc.svg',
+    link: 'https://github.com/heenap04/Marketing_A-B_testing',
+    slug: 'Marketing_A-B_testing',
+    category: 'data',
+    technologies: ['Python', 'Jupyter', 'Statistics', 'Hypothesis Testing', 'Pandas'],
+  },
+  {
+    title: 'Forever E-commerce',
+    description:
+      'A modern e-commerce platform with clean interface, product browsing, cart functionality, and seamless order flow. Designed for optimal user experience.',
+    logo: '/logos/react_icon.svg',
+    link: 'https://github.com/heenap04/E-commerce',
+    slug: 'Forever',
+    category: 'web',
+    technologies: ['JavaScript', 'React', 'CSS', 'HTML', 'E-commerce'],
+  },
+  {
+    title: 'Uinsights Analytics',
+    description:
+      'A comprehensive web analytics dashboard providing insights into user activity, session data, and traffic patterns with modern data visualization.',
+    logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/Uinsights-website',
     slug: 'Uinsights',
+    category: 'web',
+    technologies: ['JavaScript', 'React', 'Data Visualization', 'Analytics'],
   },
   {
     title: 'Beach Resort',
     description:
-      'A hotel booking website where users can browse, filter, and reserve rooms. Features include search filters, responsive UI, and real-time availability updates.',
-    logo: '/logos/vsc.svg',
+      'A hotel booking website with advanced search filters, responsive design, and real-time availability updates for seamless room reservations.',
+    logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/HotelBookingwebsite',
     slug: 'Beach Resort',
+    category: 'web',
+    technologies: ['JavaScript', 'React', 'CSS', 'Booking System'],
   },
 ];

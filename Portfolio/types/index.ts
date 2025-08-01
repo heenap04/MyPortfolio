@@ -15,6 +15,8 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
+  category: 'web' | 'data' | 'ai' | 'security' | 'mobile';
+  technologies: string[];
 }
 
 export interface Repo {

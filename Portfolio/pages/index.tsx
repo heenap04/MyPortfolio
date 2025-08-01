@@ -1,50 +1,42 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { VscArrowRight } from 'react-icons/vsc';
+import { VscArrowRight, VscGithub, VscMail } from 'react-icons/vsc';
 
 import styles from '@/styles/HomePage.module.css';
 
 export default function HomePage() {
   const [activeLineIndex, setActiveLineIndex] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const codeLines = [
-    { code: 'const HomePage = () => {', type: 'function' },
-    {
-      code: '  const [isLoaded, setIsLoaded] = useState(true);',
-      type: 'variable',
-    },
-    { code: '  const developerInfo = {', type: 'variable' },
-    { code: "    name: 'Heena Pawriya',", type: 'array-item' },
-    { code: "    role: 'Full Stack Developer',", type: 'array-item' },
-    { code: "    bio: 'Building modern web experiences'", type: 'array-item' },
-    { code: '  };', type: 'array-end' },
+    { code: 'const Heena = {', type: 'function' },
+    { code: "  name: 'Heena Pawriya',", type: 'array-item' },
+    { code: "  role: 'Full Stack Developer',", type: 'array-item' },
+    { code: "  location: 'India',", type: 'array-item' },
+    { code: "  skills: [", type: 'array-item' },
+    { code: "    'React', 'Node.js', 'Python',", type: 'array-item' },
+    { code: "    'Machine Learning', 'Data Analysis'", type: 'array-item' },
+    { code: "  ],", type: 'array-item' },
+    { code: "  passion: 'Building innovative solutions'", type: 'array-item' },
+    { code: '};', type: 'array-end' },
     { code: '', type: 'blank' },
-    { code: '  useEffect(() => {', type: 'nested-function' },
-    {
-      code: '    document.title = `${developerInfo.name} | Portfolio`;',
-      type: 'return',
-    },
-    { code: '    setIsLoaded(true);', type: 'function-call' },
-    { code: '  }, []);', type: 'close' },
-    { code: '', type: 'blank' },
-    { code: '  return (', type: 'return-object' },
-    { code: '    <main className="hero-container">', type: 'object-method' },
-    { code: '      <h1>{developerInfo.name}</h1>', type: 'object-method' },
-    { code: '      <p>{developerInfo.role}</p>', type: 'object-method' },
-    { code: '      <div className="cta">', type: 'object-method' },
-    {
-      code: '        <Link href="/projects">View Projects</Link>',
-      type: 'object-method',
-    },
-    { code: '      </div>', type: 'object-method' },
-    { code: '    </main>', type: 'object-method' },
-    { code: '  );', type: 'close' },
-    { code: '};', type: 'close-function' },
-    { code: '', type: 'blank' },
-    { code: 'export default HomePage;', type: 'function-call' },
+    { code: '// Let\'s build something amazing together!', type: 'comment' },
+    { code: 'Heena.contact();', type: 'function-call' },
+  ];
+
+  const skills = [
+    { name: 'React', icon: '⚛️' },
+    { name: 'Node.js', icon: '🟢' },
+    { name: 'Python', icon: '🐍' },
+    { name: 'Machine Learning', icon: '🤖' },
+    { name: 'Data Analysis', icon: '📊' },
+    { name: 'TypeScript', icon: '📘' },
+    { name: 'MongoDB', icon: '🍃' },
+    { name: 'AWS', icon: '☁️' },
   ];
 
   useEffect(() => {
+    setIsLoaded(true);
     const interval = setInterval(() => {
       setActiveLineIndex((prev) => (prev + 1) % codeLines.length);
     }, 2000);
@@ -57,6 +49,14 @@ export default function HomePage() {
       <div className={styles.container}>
         <div className={styles.codeSection}>
           <div className={styles.codeContainer}>
+            <div className={styles.editorHeader}>
+              <div className={styles.editorButtons}>
+                <div className={styles.button}></div>
+                <div className={styles.button}></div>
+                <div className={styles.button}></div>
+              </div>
+              <div className={styles.fileName}>heena.js</div>
+            </div>
             <div className={styles.editorContent}>
               <div className={styles.lineNumbers}>
                 {codeLines.map((_, index) => (
@@ -90,20 +90,51 @@ export default function HomePage() {
         </div>
 
         <div className={styles.infoSection}>
+          <div className={styles.greeting}>
+            <span className={styles.wave}>👋</span>
+            <span>Hello, I'm</span>
+          </div>
+          
           <h1 className={styles.developerName}>
             Heena <span className={styles.accentText}>Pawriya</span>
           </h1>
 
-          <div className={styles.developerRole}>Full Stack Web Developer</div>
+          <div className={styles.developerRole}>Full Stack Developer & Data Analyst</div>
 
           <p className={styles.bio}>
-            I build elegant, responsive web applications with modern
-            technologies. Focused on clean code and intuitive user experiences.
+            I build elegant, responsive web applications and intelligent data solutions. 
+            Passionate about creating innovative experiences that make a difference.
           </p>
+
+          <div className={styles.skillTags}>
+            {skills.map((skill, index) => (
+              <div
+                key={skill.name}
+                className={styles.skillTag}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <span className={styles.skillIcon}>{skill.icon}</span>
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
 
           <div className={styles.actionLinks}>
             <Link href="/projects" className={styles.primaryLink}>
               View Projects <VscArrowRight />
+            </Link>
+            <a
+              href="https://github.com/heenap04"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.secondaryLink}
+            >
+              <VscGithub />
+              GitHub
+            </a>
+            <Link href="/contact" className={styles.secondaryLink}>
+              <VscMail />
+              Contact
             </Link>
           </div>
         </div>
