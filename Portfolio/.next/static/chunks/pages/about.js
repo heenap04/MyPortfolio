@@ -68,4 +68,8 @@ __webpack_require__.r(__webpack_exports__);
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["pages/_app","main"], () => (__webpack_exec__("(pages-dir-browser)/./node_modules/next/dist/build/webpack/loaders/next-clie
+/******/ __webpack_require__.O(0, ["pages/_app","main"], () => (__webpack_exec__("(pages-dir-browser)/./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=C%3A%5CUsers%5Cheena%5CMy%20Projects%20WebDev%5CMy_Portfolio%5CPortfolio%5Cpages%5Cabout.tsx&page=%2Fabout!")));
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ _N_E = __webpack_exports__;
+/******/ }
+]);
