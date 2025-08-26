@@ -70,6 +70,16 @@ export const projects: Project[] = [
     technologies: ['Python', 'Jupyter', 'Statistics', 'Hypothesis Testing', 'Pandas'],
   },
   {
+    title: 'TestItOut',
+    description:
+      'Test Case Generator is an AI-powered web application that automates the creation of comprehensive test cases for your codebase. It seamlessly integrates with GitHub repositories, allowing developers to select code files and generate intelligent, production-ready test cases using OpenAIs GPT-3.5 model.',
+    logo: '/logos/react_icon.svg',
+    link: 'https://github.com/heenap04/TestItOut',
+    slug: 'TestIOut',
+    category: 'web',
+    technologies: ['JavaScript', 'React', 'CSS', 'HTML', 'E-commerce'],
+  },
+  {
     title: 'Forever E-commerce',
     description:
       'A modern e-commerce platform with clean interface, product browsing, cart functionality, and seamless order flow. Designed for optimal user experience.',
