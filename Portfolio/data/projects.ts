@@ -10,10 +10,20 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'My Portfolio',
+    description:
+      'A personal portfolio website showcasing projects, skills, and experience. Built with Nextjs and Tailwind CSS for a modern, responsive design.',
+    logo: '/logos/react_icon.svg',
+    link: 'https://github.com/heenap04/MyPortfolio',
+    slug: 'Portfolio',
+    category: 'web',
+    technologies: ['Nextjs', 'Node.js', 'MongoDB', 'Express'],
+  },
+  {
     title: 'Jobseee',
     description:
       'A comprehensive job portal platform connecting employers and job seekers. Features include real-time job listings, advanced search filters, secure authentication, dynamic dashboards, and seamless application tracking.',
-    logo: '/logos/jobseee.jpg',
+    logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/Jobseee_jobportal_final',
     slug: 'Jobseee',
     category: 'web',
@@ -77,7 +87,7 @@ export const projects: Project[] = [
     link: 'https://github.com/heenap04/TestItOut',
     slug: 'TestIOut',
     category: 'web',
-    technologies: ['JavaScript', 'React', 'CSS', 'HTML', 'E-commerce'],
+    technologies: ['JavaScript', 'React', 'CSS', 'Expressjs', 'Node.js', 'OpenAI API'],
   },
   {
     title: 'Forever E-commerce',
@@ -87,7 +97,7 @@ export const projects: Project[] = [
     link: 'https://github.com/heenap04/E-commerce',
     slug: 'Forever',
     category: 'web',
-    technologies: ['JavaScript', 'React', 'CSS', 'HTML', 'E-commerce'],
+    technologies: ['JavaScript', 'React', 'CSS', 'HTML', 'E-commerce', 'Expressjs' , 'Node.js' , 'MongoDB'],
   },
   {
     title: 'Uinsights Analytics',
@@ -97,16 +107,6 @@ export const projects: Project[] = [
     link: 'https://github.com/heenap04/Uinsights-website',
     slug: 'Uinsights',
     category: 'web',
-    technologies: ['JavaScript', 'React', 'Data Visualization', 'Analytics'],
-  },
-  {
-    title: 'Beach Resort',
-    description:
-      'A hotel booking website with advanced search filters, responsive design, and real-time availability updates for seamless room reservations.',
-    logo: '/logos/react_icon.svg',
-    link: 'https://github.com/heenap04/HotelBookingwebsite',
-    slug: 'Beach Resort',
-    category: 'web',
-    technologies: ['JavaScript', 'React', 'CSS', 'Booking System'],
+    technologies: ['JavaScript', 'HTML','CSS'],
   },
 ];
