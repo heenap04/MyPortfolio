@@ -90,7 +90,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             className={styles.githubLink}
           >
             <VscGithub />
-            <span>View on GitHub</span>
+            <span>View project</span>
           </a>
         </div>
       </div>
