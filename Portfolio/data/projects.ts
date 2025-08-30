@@ -4,7 +4,7 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
-  category: 'web' | 'data' | 'ai' | 'security'| 'ui';
+  category: 'web' | 'data' | 'ai' | 'security' | 'mobile';
   technologies: string[];
 }
 
@@ -108,15 +108,5 @@ export const projects: Project[] = [
     slug: 'Uinsights',
     category: 'web',
     technologies: ['JavaScript', 'HTML','CSS'],
-  },
-  {
-    title: 'TripSync UI',
-    description:
-      'A comprehensive web analytics dashboard providing insights into user activity, session data, and traffic patterns with modern data visualization.',
-    logo: '/logos/react_icon.svg',
-    link: 'https://www.figma.com/design/3i7ohrxLr9QGeA5pnVONuJ/TripSync?node-id=0-1&t=L93WX5CqvkWhkwis-0',
-    slug: 'TripSync',
-    category: 'ui',
-    technologies: ['Figma'],
   },
 ];
