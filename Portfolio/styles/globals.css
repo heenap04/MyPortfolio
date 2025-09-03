@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
 
+:root {
+  --main-bg: #0a0e17;
+  --explorer-bg: #0f1621;
+  --explorer-border: #1e293b;
+  --bottombar-bg: #0f1621;
+  --bottombar-border: #1e293b;
+  --text-color: #e1e4e8;
+  --accent-color: #38bdf8;
+}
+
 *,
 *::before,
 *::after {
@@ -8,6 +18,33 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--text-color);
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 20%),
+    linear-gradient(to bottom right, #0f172a, #1e1b4b);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 a {
   text-decoration: none;
+  color: var(--accent-color);
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
 }

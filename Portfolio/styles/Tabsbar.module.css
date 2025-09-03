@@ -1,8 +1,27 @@
 .tabs {
   display: flex;
-  /* flex-wrap: wrap; */
   background: var(--tabs-bg);
   overflow-x: auto;
+  position: fixed;
+  top: 30px; /* Height of the titlebar */
+  left: 18vw; /* Match the width of the explorer */
+  right: 0;
+  z-index: 900; /* Lower than titlebar but above content */
+  height: 40px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--explorer-border);
+}
+
+/* Add a small shadow for better visual separation */
+.tabs::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 900px) {

@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         return '#a855f7';
       case 'security':
         return '#f59e0b';
-      case 'mobile':
+      case 'ui':
         return '#10b981';
       default:
         return '#61dafb';
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         return '🤖';
       case 'security':
         return '🔒';
-      case 'mobile':
+      case 'ui':
         return '📱';
       default:
         return '💻';

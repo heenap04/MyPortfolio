@@ -5,20 +5,50 @@
   background: var(--main-bg);
   overflow-x: hidden;
   min-height: 100vh;
+  padding-left: 4.5vw; /* Match the width of the sidebar */
+  padding-top: 30px; /* Height of the titlebar */
+  padding-bottom: 25px; /* Height of the bottom bar */
+  box-sizing: border-box;
+  padding-bottom: 50px; /* Extra space for the fixed bottom bar */
+}
+
+/* Adjust padding for smaller screens */
+@media screen and (max-width: 1100px) {
+  .main {
+    padding-left: 6vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    padding-left: 8vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .main {
+    padding-left: 2.5vw;
+  }
 }
 
 .content {
-  padding: 2rem;
+  padding: 1rem 3rem 2rem 3rem; /* Increased horizontal padding */
   color: var(--text-color);
   font-family: 'JetBrains Mono', monospace;
   flex: 1;
-  min-height: 100vh;
+  min-height: calc(100vh - 85px); /* Account for titlebar + tabs bar + bottom bar */
+  margin-top: 40px; /* Height of the tabs bar + extra spacing */
   height: auto;
-  overflow-y: visible;
+  overflow-y: auto;
   overflow-x: hidden;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center; /* Center the content */
   scroll-behavior: smooth;
+  margin-left: 18.5vw; /* Sidebar (4.5vw) + Explorer (14vw) */
+  width: calc(81.5vw - 4.5vw); /* Take remaining width minus sidebar */
+  max-width: 1300px; /* Slightly increased max-width */
+  margin-right: auto; /* Center the content block */
 }
 
 .content {

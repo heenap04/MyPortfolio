@@ -4,7 +4,7 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
-  category: 'web' | 'data' | 'ai' | 'security' | 'mobile';
+  category: 'web development' | 'data analysis' | 'ai' | 'security' | 'ui design';
   technologies: string[];
 }
 
@@ -16,7 +16,7 @@ export const projects: Project[] = [
     logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/MyPortfolio',
     slug: 'Portfolio',
-    category: 'web',
+    category: 'web development',
     technologies: ['Nextjs', 'Node.js', 'MongoDB', 'Express'],
   },
   {
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/Jobseee_jobportal_final',
     slug: 'Jobseee',
-    category: 'web',
+    category: 'web development',
     technologies: ['JavaScript', 'React', 'Node.js', 'MongoDB', 'Express'],
   },
   {
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     logo: '/logos/vsc.svg',
     link: 'https://github.com/heenap04/CLV-prediction',
     slug: 'CLV-prediction',
-    category: 'data',
+    category: 'data analysis',
     technologies: ['Python', 'Jupyter', 'Machine Learning', 'Pandas', 'Scikit-learn'],
   },
   {
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     logo: '/logos/vsc.svg',
     link: 'https://github.com/heenap04/UberRides_DataAnalysis',
     slug: 'UberRides_DataAnalysis',
-    category: 'data',
+    category: 'data analysis',
     technologies: ['Python', 'Jupyter', 'Pandas', 'Matplotlib', 'Seaborn'],
   },
   {
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     logo: '/logos/vsc.svg',
     link: 'https://github.com/heenap04/Marketing_A-B_testing',
     slug: 'Marketing_A-B_testing',
-    category: 'data',
+    category: 'data analysis',
     technologies: ['Python', 'Jupyter', 'Statistics', 'Hypothesis Testing', 'Pandas'],
   },
   {
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/TestItOut',
     slug: 'TestIOut',
-    category: 'web',
+    category: 'web development',
     technologies: ['JavaScript', 'React', 'CSS', 'Expressjs', 'Node.js', 'OpenAI API'],
   },
   {
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/E-commerce',
     slug: 'Forever',
-    category: 'web',
+    category: 'web development',
     technologies: ['JavaScript', 'React', 'CSS', 'HTML', 'E-commerce', 'Expressjs' , 'Node.js' , 'MongoDB'],
   },
   {
@@ -106,7 +106,8 @@ export const projects: Project[] = [
     logo: '/logos/react_icon.svg',
     link: 'https://github.com/heenap04/Uinsights-website',
     slug: 'Uinsights',
-    category: 'web',
-    technologies: ['JavaScript', 'HTML','CSS'],
+    category: 'ui design',
+    technologies: ['figma'],
   },
+  
 ];

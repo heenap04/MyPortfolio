@@ -1,9 +1,16 @@
 .explorer {
   background: var(--explorer-bg);
-  width: 18vw;
+  width: 14vw; /* Reduced from 18vw */
   color: rgb(225, 228, 232);
   font-family: 'Source Sans Pro', sans-serif;
   border-right: 1px solid var(--explorer-border);
+  position: fixed;
+  top: 30px;
+  left: 4.5vw;
+  bottom: 25px;
+  overflow-y: auto;
+  z-index: 800;
+  padding: 0 0.5rem 1rem 0.5rem; /* Reduced side padding */
 }
 
 .title {
@@ -35,6 +42,8 @@
 .files {
   padding: 0.5rem 0;
   cursor: pointer;
+  max-height: calc(100vh - 120px); /* Adjust based on other elements */
+  overflow-y: auto; /* Make files scrollable if needed */
 }
 
 .file {

@@ -11,11 +11,11 @@ const ProjectsPage = () => {
 
   const categories = [
     { id: 'all', name: 'All Projects', icon: '💻' },
-    { id: 'web', name: 'Web Development', icon: '🌐' },
-    { id: 'data', name: 'Data Analysis', icon: '📊' },
+    { id: 'web development', name: 'Web Development', icon: '🌐' },
+    { id: 'data analysis', name: 'Data Analysis', icon: '📊' },
     { id: 'ai', name: 'AI & ML', icon: '🤖' },
     { id: 'security', name: 'Security', icon: '🔒' },
-    { id: 'mobile', name: 'Mobile', icon: '📱' },
+    { id: 'ui design', name: 'UI Design', icon: '🎨' },
   ];
 
   const filteredProjects = useMemo(() => {

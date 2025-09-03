@@ -15,7 +15,7 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
-  category: 'web' | 'data' | 'ai' | 'security' | 'mobile';
+  category: 'web development' | 'data analysis' | 'ai' | 'security' | 'ui design';
   technologies: string[];
 }
 

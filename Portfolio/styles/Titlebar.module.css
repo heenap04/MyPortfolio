@@ -9,6 +9,17 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.85rem;
   border-bottom: 1px solid #191d20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Add a spacer to push content down below the fixed titlebar */
+.titlebarSpacer {
+  height: 30px; /* Same as titlebar height */
+  width: 100%;
 }
 
 .items {
